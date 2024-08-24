@@ -6,10 +6,14 @@ btn.addEventListener(
   {
     let h1 = document.querySelector("h1");
     let color = random();
-    h1.innerText = color; //changes the inner text
+    let bc = random();
+    h1.innerText = `THE  BACK GROUND COLOR CHANGED TO ${bc} \n BOX COLOR CHANGES TO ${color}`; //changes the inner text
 
     let div = document.querySelector("div");
     div.style.backgroundColor = color; //this chaging background color of div
+
+    let body = document.querySelector("body");
+    body.style.backgroundColor = bc;
 
     let h3 = document.querySelector("h3");
     h3.innerText = "color in above  box changed";
